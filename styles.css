@@ -1,1 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #1d0d23;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 12px;
+}
+
+.menu-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styles */
+nav {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #1d0d23; /* Matches the header */
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+nav.visible {
+    display: block; /* Show when toggled */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #9f42f5; /* Highlight on hover */
+}
+
+/* Main Styles */
+
+.video-box {
+    background-color: #333333;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border: 3px solid #9f42f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Video Styles */
+.video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the box */
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0208; /* Dark background color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Centered text */
+    color: #fff; /* White text color */
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+    gap: 10px; /* Space between items */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for icons */
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons a img {
+    width: 32px; /* Width of icons */
+    height: 32px; /* Height of icons */
+    transition: transform 0.3s; /* Transition effect */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.footer-text {
+    font-size: 14px; /* Text size */
+    color: #9f42f5; /* Text color */
+}
 
